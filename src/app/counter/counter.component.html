@@ -1,0 +1,10 @@
+<!-- directive -->
+<p *ngIf="value">
+  <!-- interpolation -->
+  {{value}}
+</p>
+<!-- event binding -->
+<button (click)="increament()">+</button>
+
+<!-- input / output -->
+<app-reset [valueChanged]="value" (valueReset)="resetValue()"></app-reset>
