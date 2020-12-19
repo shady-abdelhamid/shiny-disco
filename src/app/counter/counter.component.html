@@ -4,7 +4,32 @@
   {{value}}
 </p>
 <!-- event binding -->
-<button (click)="increament()">+</button>
-
+<button type="button" class="btn btn-primary" (click)="increament()">
+  <i class="fas fa-plus"></i>
+</button>
 <!-- input / output -->
 <app-reset [valueChanged]="value" (valueReset)="resetValue()"></app-reset>
+
+
+
+<table class="table table-striped table-inverse table-responsive">
+  <thead class="thead-inverse">
+    <tr>
+      <th>doctor</th>
+      <th>specialization</th>
+      <th>appointmints</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row"></td>
+      <td>ahmed</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td scope="row"></td>
+      <td>moheamed</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
